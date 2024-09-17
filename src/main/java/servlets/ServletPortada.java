@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import modelo.SombrerosDAO;
+import daos.*;
+import modelo.*;
+
 
 /**
  * este @WebServlet es crucial: indica la ruta por la que el servlet sera
@@ -46,7 +48,7 @@ public class ServletPortada extends HttpServlet {
 		 * Desde el servlet que es parte de control, no accedo directamente a base de
 		 * datos, eso lo hara la parte de modelo, en ese caso a traves de un DAO
 		 */
-		ArrayList<String> sombreros = sombrerosDAO.obtenerSombrero();
+		ArrayList<Sombrero> sombreros = sombrerosDAO.obtenerSombrero();
 
 		/**
 		 * Yo quiero que estos sombreros le lleguen a portada.jsp para ello son
