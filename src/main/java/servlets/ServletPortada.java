@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import daos.*;
 import modelo.*;
 
-
 /**
  * este @WebServlet es crucial: indica la ruta por la que el servlet sera
  * ejecutado
