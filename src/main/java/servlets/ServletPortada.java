@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import daos.*;
+import daosImpl.*;
 import modelo.*;
 
 /**
@@ -42,7 +43,8 @@ public class ServletPortada extends HttpServlet {
 		 * necesitamos obtener los productos para darselo a la portada y que la portada
 		 * los liste
 		 */
-		SombrerosDAO sombrerosDAO = new SombrerosDAO();
+		SombrerosDAO sombrerosDAO = new SombrerosDAOImpl();
+
 		/**
 		 * Desde el servlet que es parte de control, no accedo directamente a base de
 		 * datos, eso lo hara la parte de modelo, en ese caso a traves de un DAO

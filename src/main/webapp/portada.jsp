@@ -8,6 +8,12 @@
 <title>Portada</title>
 </head>
 <body>
+
+
+	<div>
+		<a href="registrarNuevoSombrero.jsp">Registrar nuevo sombrero</a>
+	</div>
+
 	<h1>Listado de sombreros:</h1>
 	<hr>
 	<c:forEach items="${info_listado}" var="elemento">
