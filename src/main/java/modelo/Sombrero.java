@@ -4,6 +4,7 @@ public class Sombrero {
 	private String nombre;
 	private String desc;
 	private double precio;
+	private long id;
 
 	public Sombrero() {
 		// TODO Auto-generated constructor stub
@@ -38,6 +39,14 @@ public class Sombrero {
 
 	public void setPrecio(double precio) {
 		this.precio = precio;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 }

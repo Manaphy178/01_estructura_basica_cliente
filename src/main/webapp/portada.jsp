@@ -20,7 +20,9 @@
 		<div style="margin: 5px">
 			Tipo: ${elemento.nombre} <br> 
 			Descripcion: ${elemento.desc } <br>
-			Precio: ${elemento.precio } euros
+			Precio: ${elemento.precio } euros <br>
+			ID: ${elemento.id} <br>
+			<a href="ServletBorrarSombrero?id=${elemento.id }">Borrar</a>
 			<hr>
 		</div>
 	</c:forEach>

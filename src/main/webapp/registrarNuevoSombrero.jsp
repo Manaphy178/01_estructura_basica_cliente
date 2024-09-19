@@ -9,8 +9,8 @@ pageEncoding="UTF-8"%>
   <body>
     <h1>Introduce los datos del nuevo libro</h1>
 
-    <form action="servletRegistroSombrero" method="post">
-      Nombre: <input type="text" name="Nombre" id="Nombre" /> <br />
+    <form action="ServletRegistroSombrero" method="post">
+      Nombre: <input type="text" name="nombre" id="nombre" /> <br />
       Descripcion:
       <textarea
         rows="3"
